@@ -11,7 +11,7 @@
       - name: Build Docker Image
         command: docker build -t petstore .
         args:
-          chdir: /var/lib/jenkins/workspace/petstore
+          chdir: /var/lib/jenkins/workspace/Jpetstore
 
       - name: tag image
         command: docker tag petstore:latest claw4321/petstore:latest 
