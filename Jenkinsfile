@@ -54,7 +54,7 @@ pipeline{
         stage('Install Docker') {
             steps {
                     script {
-                            sh "ansible-playbook docker.yaml -i inventories/dev/hosts --user node --verbose"
+                            sh "ansible-playbook docker.yaml -i inventories/dev/hosts --user node "
                             }
                 }
         }
