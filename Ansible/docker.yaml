@@ -20,7 +20,7 @@
         community.docker.docker_login:
           registry_url: https://index.docker.io/v1/
           username: claw4321
-          password: dockerhubpassword
+          password: Root@Root12
 
       - name: Push image
         command: docker push claw4321/petstore:latest
