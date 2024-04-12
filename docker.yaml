@@ -4,10 +4,6 @@
     become: yes  # Run tasks with sudo privileges
 
     tasks:
-      - name: Update apt package cache
-        apt:
-          update_cache: yes   
-
       - name: Build Docker Image
         command: docker build -t petstore .
         args:
@@ -20,7 +16,7 @@
         community.docker.docker_login:
           registry_url: https://index.docker.io/v1/
           username: claw4321
-          password: Root@Root12
+          password: dckr_pat_IxqCerVTbH1c761MevhfDR3ITlc
 
       - name: Push image
         command: docker push claw4321/petstore:latest
